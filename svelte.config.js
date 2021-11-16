@@ -1,6 +1,7 @@
 import preprocess from 'svelte-preprocess';
 import vercel from '@sveltejs/adapter-vercel';
 import cloudflare from '@sveltejs/adapter-cloudflare-workers';
+import netlify from '@sveltejs/adapter-netlify';
 
 console.log('ADAPTER', process.env.ADAPTER);
 
@@ -10,6 +11,8 @@ function getAdapter() {
 			return vercel();
 		case 'CLOUDFLARE':
 			return cloudflare();
+		case 'NETLIFY':
+			return netlify();
 		default:
 			return vercel();
 	}
