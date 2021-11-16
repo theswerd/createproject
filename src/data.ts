@@ -18,14 +18,14 @@ const data: Data = {
 		{ name: 'The Living Daylights', year: 1987, lead_id: 4, rating: 74 },
 		{ name: 'Licence to Kill', year: 1989, lead_id: 4, rating: 78 },
 		{ name: 'GoldenEye|Golden Eye', year: 1995, lead_id: 2, rating: 79 },
-		{ name: 'Tomorrow Never Dies', year: 1997, lead_id: 2, rating: 81 },
-		{ name: 'The World Is Not Enough', year: 1999, lead_id: 2, rating: 72 },
-		{ name: 'Die Another Day', year: 2002, lead_id: 2, rating: 82 },
-		{ name: 'Casino Royale', year: 2006, lead_id: 1, rating: 83 },
-		{ name: 'Quantum of Solace', year: 2008, lead_id: 1, rating: 81 },
-		{ name: 'Skyfall', year: 2012, lead_id: 1, rating: 79 },
-		{ name: 'Spectre', year: 2015, lead_id: 1, rating: 76 },
-		{ name: 'No Time to Die', year: 2016, lead_id: 1, rating: 79 }
+		{ name: 'Tomorrow Never Dies', year: 1997, lead_id: 2, rating: 56 },
+		{ name: 'The World Is Not Enough', year: 1999, lead_id: 2, rating: 52 },
+		{ name: 'Die Another Day', year: 2002, lead_id: 2, rating: 56 },
+		{ name: 'Casino Royale', year: 2006, lead_id: 1, rating: 94 },
+		{ name: 'Quantum of Solace', year: 2008, lead_id: 1, rating: 64},
+		{ name: 'Skyfall', year: 2012, lead_id: 1, rating: 92 },
+		{ name: 'Spectre', year: 2015, lead_id: 1, rating: 63 },
+		{ name: 'No Time to Die', year: 2016, lead_id: 1, rating: 84 }
 	],
 	actors: [
 		{ name: 'Daniel Craig', id: 1 },
