@@ -1,4 +1,19 @@
 import preprocess from 'svelte-preprocess';
+import vercel from '@sveltejs/adapter-vercel';
+import cloudflare from '@sveltejs/adapter-cloudflare-workers';
+
+console.log('ADAPTER', process.env.ADAPTER);
+
+function getAdapter() {
+	switch (process.env.ADAPTER) {
+		case 'VERCEL':
+			return vercel();
+		case 'CLOUDFLARE':
+			return cloudflare();
+		default:
+			return vercel();
+	}
+}
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -8,7 +23,8 @@ const config = {
 
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+		target: '#svelte',
+		adapter: getAdapter()
 	}
 };
 
